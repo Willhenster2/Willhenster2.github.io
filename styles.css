@@ -1,0 +1,75 @@
+body {
+	background-image: url('bobross.jpg');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	background-size: 100vw;
+	font-color: green;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+.rainbow-text {
+  background-image: repeating-linear-gradient(to left, red, violet, indigo, blue, green, yellow, orange, red);
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: bg 5s infinite linear;
+}
+
+@keyframes bg {
+	from {background-position: 0vw;}
+	to {background-position: 100vw;}
+}
+
+ul {
+ list-style-type: none;
+ margin: 0px;
+ padding: 1px;
+ overflow: hidden;
+ background-color: #990000;
+ position: fixed;
+ top: 0;
+ width: 100%;
+}
+
+li {
+ float: left;
+ border-right: 2px solid white;
+}
+
+/* Add a border to all( but not the last) list items */
+li:last-child { 
+ border-right: none;
+}
+
+li a {
+ display: block;
+ color: white;
+ text-align: left;
+ padding: 15px 17px;
+ text-decoration: none;
+}
+
+/* Links will change color when hovered over */
+li a:hover {
+ background-color: #7300ff;
+}
+
+.active {
+ background-color: #d61d1d;
+}
