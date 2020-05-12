@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<title>website :)</title>
+
+<body>
+
+<ul>
+	<li><a href="index.html">What</a></li>
+	<li><a href="who.html">Who</a></li>
+	<li><a href="brain.html">Why</a></li>
+	<li><a href="quiz.html">Quiz</a></li>
+</ul>
+
+<br>
+<br>
+<audio autoplay loop controls class="center">
+  <source src="pilotwings.ogg" type="audio/ogg">
+</audio> 
+<h1 class="rainbow-text" id="webTitle">cool web page!!1!</h1>
+<div class="center">
+<p id="thanks"></p>
+</div>
+<h2>What did I use in making this website?</h2>
+<marquee behavior="scroll" direction="left">HTML</marquee>
+<p class="rainbow-text">CSS</p>
+<p style="text-align:center" id="js">JavaScript</p>
+<marquee behavior="scroll" direction="right" scrolldelay="1" scrollamount="3"><img src="fish.gif" width="600" height="250" alt="Swimming fish" /></marquee>
+
+</body>
+
+<script>
+	function generateExclaimation() {
+		var excMark = "!";
+		var num;
+		var i;
+		var max = Math.floor(Math.random() * 9) + 3;
+		for (i = 0; i < max; i++) {
+			num = Math.floor(Math.random() * 4);;
+			switch(num) {
+				case 0:
+					excMark += "1";
+					break;
+				default:
+					excMark += "!";
+			}	
+		}
+		return excMark;
+	}
+	
+	
+	function randomExc() {
+		excOne = generateExclaimation();
+		excTwo = generateExclaimation();
+		
+		document.getElementById("webTitle").innerHTML = "cool web page" + excOne;
+		document.getElementById("js").innerHTML = "JavaScript" + excTwo;
+	}
+	
+	var interval = setInterval(randomExc, 150);
+	randomExc();
+	
+	function thanks() {
+		var i;
+		var x;
+		var thanks = "THANKS FOR COMING ALONG";
+		var n = thanks.length;
+		var bigOut = "";
+		var max = Math.floor(Math.random() * 139);
+		for (i = 0; i < max; i++) {
+			var output = "\r";
+			for (x = 0; x < n; x++) {
+				var num = Math.floor(Math.random() * 3);
+				switch(num) {
+					case 0:
+						break;
+					default:
+						output += thanks[x]
+				}
+			}
+			bigOut += output;
+			bigOut += generateExclaimation();
+			bigOut += "<br>";
+		}
+		document.getElementById("thanks").innerHTML = bigOut;
+	}
+	thanks();
+</script>
+
+</html>
