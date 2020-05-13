@@ -2,14 +2,18 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="styles.css">
 <style>
 	body {
-		background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.insurancejournal.com%2Fapp%2Fuploads%2F2013%2F12%2FQuestion-Mark.jpg&f=1&nofb=1');
+		background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.christineluken.com%2Fwp-content%2Fuploads%2F2016%2F05%2FMost-Important-Question.jpg&f=1&nofb=1');
 		background-position: top right;
 		background-attachment: fixed;
 		background-repeat: repeat-x;
 		background-size: 50% 100%;
+	}
+	
+	.center {
+		background-image: none;
 	}
 	
 	button {
@@ -33,64 +37,73 @@
 </audio> 
 <br>
 <span class="center" style="text-align:center">
-<p style="center"><b>Question 1</b><br>What is my favourite game?</p>
+<h1 class="rainbow-text">YAY QUIZ TIME!!!!!</h1>
+<p style="font-size:30px; background-color:yellow;">Not all questions must be answered, only the ones with a *!</p>
+<p style="center"><b>Question 1</b><br>Do we celebrate the fourth of July in England?</p>
 <input type="radio" id="1" name="1" value="1">
-<label for="1">Tetris</label><br>
+<label for="1">Yes</label><br>
 <input type="radio" id="2" name="1" value="2">
-<label for="2">Fortnite</label><br>
+<label for="2">No</label><br>
 <input type="radio" id="3" name="1" value="3">
-<label for="3">Overwatch</label><br>
+<label for="3">Maybe</label><br>
 <input type="radio" id="4" name="1" value="4">
-<label for="4">Google Earth</label>
+<label for="4">what is the fourth of july</label>
 
 <p style="center"><b>Question 2</b><br>What is the best TV show?</p>
 <input type="radio" id="5" name="2" value="1">
-<label for="5">Seinfeld</label><br>
+<label for="5">Planet Earth</label><br>
 <input type="radio" id="6" name="2" value="2">
-<label for="6">Walking Dead</label><br>
+<label for="6">Breaking Bad</label><br>
 <input type="radio" id="7" name="2" value="3">
-<label for="7">Rick and monkey</label><br>
+<label for="7">Rick and Morty</label><br>
 <input type="radio" id="8" name="2" value="4">
-<label for="8">monkey</label>
+<label for="8">Me and the Chimp</label>
 
-<p style="center"><b>Question 3</b><br>They are often seen as being cute and highly intelligent animals.</p>
+<p style="center"><b>Question 3</b><br>What are the most intellectual animals on Earth?</p>
 <input type="radio" id="9" name="3" value="1">
-<label for="9">Dog</label><br>
+<label for="9">Dogs</label><br>
 <input type="radio" id="10" name="3" value="2">
-<label for="10">onky</label><br>
+<label for="10">monkey</label><br>
 <input type="radio" id="11" name="3" value="3">
-<label for="11">monky</label><br>
+<label for="11">Humans</label><br>
 <input type="radio" id="12" name="3" value="4">
-<label for="12">monkey</label>
+<label for="12">Dolphins</label>
 
 <p style="center"><b>Question 4</b><br>what monkey are you</p>
 <input type="radio" id="13" name="4" value="1">
-<label for="13">onk</label><br>
+<label for="13">hunchback (harambe)</label><br>
 <input type="radio" id="14" name="4" value="2">
-<label for="14">onky</label><br>
+<label for="14">proboscis (fat schnozer)</label><br>
 <input type="radio" id="15" name="4" value="3">
-<label for="15">monky</label><br>
+<label for="15">onky</label><br>
 <input type="radio" id="16" name="4" value="4">
-<label for="16">monkey</label>
+<label for="16">common</label>
 
-<p style="center"><b>Question 5</b><br>monkey</p>
+<p style="center"><b>Question 5</b><br>Some months have 32 days; how many have 28?</p>
+<input type="number" value="7"></input>
+
+<p style="center"><b>Question 6</b><br>Can a California man legally marry his widow's sister?</p>
 <input type="radio" id="17" name="5" value="1">
-<label for="17">monkey</label><br>
+<label for="17">Yes</label><br>
 <input type="radio" id="18" name="5" value="2">
-<label for="18">monkey</label><br>
+<label for="18">No</label><br>
 <input type="radio" id="19" name="5" value="3">
-<label for="19">monkey</label><br>
-<input type="radio" id="20" name="5" value="4">
-<label for="20">monkey</label>
+<label for="19">What</label><br>
 
-<p style="center"><b>monkey</b><br>monkey</p>
-<input type="radio" id="monkey" name="monkey" value="monkey">
-<label for="monkey" >monkey</label><br>
+<p style="center"><b>Question 7</b><br><span style="background-color:yellow">How much force would have to be exerted on a 30kg apple with a volume of 1nm cubed in order for an average human to send it to the surface of the moon from sea level on Earth?</span><br>Model the apple as a uniform particle.<br>Assume there is no air resistance.<br>Leave your answer in standard form.</p>
+<input type="number" value="29"></input>x10^<input type="number" value="29"></input>J
+
+<p style="center"><b>Question 8*</b><br>What is your IQ?</p>
+<input id="IQ" type="number" min="-1" max="29" value="100"></input>
+
+<p style="center"><b>Question 9*</b><br>are you a monkey</p>
+<input type="checkbox" id="monkey" name="monkey" value="monkey">
+<label for="monkey">monkey</label><br>
 
 <br>
 <br>
 <br>
-<button onclick="monkey();" style="width: 60%; height: 50%">monkey</button>
+<button onclick="monkey();" style="width: 60%; height: 50%">Finish quiz!</button>
 <br>
 <br>
 <br>
@@ -102,9 +115,21 @@
 
 <script>
 	function monkey() {
-		var monkey = confirm("monkey");
-		if (monkey) {
-			window.location.href = "monkey.html";
+		var iq = document.getElementById('IQ').value
+		if (iq > 29) {
+			alert("I was looking at your answers and I saw Question 8.\nIt isn't healthy to lie to yourself.\nYour IQ is at most 29.\nGo and fix that.")
+		}
+		else {
+			var checkbox = document.getElementById('monkey').checked
+			if (checkbox) {
+				var monkey = confirm("Once you submit, you can't go back!");
+				if (monkey) {
+					window.location.href = "monkey.html";
+				}
+			}
+			else {
+				alert("Question 9: You didn't give an answer.")
+			}
 		}
 	}
 </script>
