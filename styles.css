@@ -3,13 +3,9 @@ body {
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-attachment: fixed;
-	background-size: 100vw;
+	background-size: 100% 100%;
 	font-color: green;
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
-
-h1 {
-	text-align: center;
 }
 
 h2 {
@@ -20,56 +16,75 @@ h2 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 30%;
+	width: 65%;
+	text-align:center;
+	background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwlcoller.co.uk%2Fwp-content%2Fuploads%2F2015%2F02%2FNatural-Parchmnet-Card-1.jpg&f=1&nofb=1');
 }
 
 .rainbow-text {
-  background-image: repeating-linear-gradient(to left, red, violet, indigo, blue, green, yellow, orange, red);
-  text-align: center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: bg 5s infinite linear;
+	background-image: repeating-linear-gradient(to left, red, violet, indigo, blue, green, yellow, orange, red);
+	text-align: center;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: bg 5s infinite linear;
+}
+
+h1 {
+	text-align: center;
+	display: block;
+	font-size: 50px;
+	line-height: 100px;
+	text-shadow: 0 1px 0,
+	0 2px 0,
+	0 3px 0,
+	0 4px 0,
+	0 5px 0,
+	0 6px 0,
+	0 7px 0,
+	0 8px 0,
+	0 9px 0,
+	0 10px 10px rgba(0, 0, 0, .3);
 }
 
 @keyframes bg {
 	from {background-position: 0vw;}
-	to {background-position: 100vw;}
+	to {background-position: 1000vw;}
 }
 
 ul {
- list-style-type: none;
- margin: 0px;
- padding: 1px;
- overflow: hidden;
- background-color: #990000;
- position: fixed;
- top: 0;
- width: 100%;
+	list-style-type: none;
+	margin: 0px;
+	padding: 1px;
+	overflow: hidden;
+	background-color: #990000;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 li {
- float: left;
- border-right: 2px solid white;
+	float: left;
+	border-right: 2px solid white;
 }
 
 /* Add a border to all( but not the last) list items */
 li:last-child { 
- border-right: none;
+	border-right: none;
 }
 
 li a {
- display: block;
- color: white;
- text-align: left;
- padding: 15px 17px;
- text-decoration: none;
+	display: block;
+	color: white;
+	text-align: left;
+	padding: 15px 17px;
+	text-decoration: none;
 }
 
 /* Links will change color when hovered over */
 li a:hover {
- background-color: #7300ff;
+	background-color: #7300ff;
 }
 
 .active {
- background-color: #d61d1d;
+	background-color: #d61d1d;
 }
