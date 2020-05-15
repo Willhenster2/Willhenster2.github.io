@@ -94,7 +94,7 @@
 <input type="number" value="29"></input>x10^<input type="number" value="29"></input>J
 
 <p style="center"><b>Question 8*</b><br>What is your IQ?</p>
-<input id="IQ" type="number" min="-1" max="29" value="100"></input>
+<input id="IQ" type="number" min="-1" max="200" value="100"></input>
 
 <p style="center"><b>Question 9*</b><br>are you a monkey</p>
 <input type="checkbox" id="monkey" name="monkey" value="monkey">
@@ -116,8 +116,8 @@
 <script>
 	function monkey() {
 		var iq = document.getElementById('IQ').value
-		if (iq > 29) {
-			alert("I was looking at your answers and I saw Question 8.\nIt isn't healthy to lie to yourself.\nYour IQ is at most 29.\nGo and fix that.")
+		if (iq >= 200) {
+			window.location.href = "bigbrain.html";	
 		}
 		else {
 			var checkbox = document.getElementById('monkey').checked
